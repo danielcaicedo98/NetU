@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication8;
+package main;
 
 import java.awt.Color;
 
@@ -131,8 +131,7 @@ public class Servidor extends javax.swing.JFrame {
                                 .addGap(52, 52, 52)))
                         .addGroup(pnlInfEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(cbxSubDepS, 0, 138, Short.MAX_VALUE)
-                            .addComponent(cbxSexoS, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(cbxSexoS, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(pnlInfEmpleadoLayout.createSequentialGroup()
                         .addGroup(pnlInfEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
