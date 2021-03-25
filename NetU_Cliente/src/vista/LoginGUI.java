@@ -15,12 +15,8 @@ import javax.swing.JPanel;
  * @author PuntoPC
  */
 public class LoginGUI extends javax.swing.JFrame {
-
-    Fondo fondo = new Fondo();
-    
     
     public LoginGUI() {
-        //this.setContentPane(fondo);
         initComponents();
     }
 
@@ -41,7 +37,7 @@ public class LoginGUI extends javax.swing.JFrame {
         lblPass = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("NetU");
+        setTitle("NetU Cliente");
 
         btnLogin.setText("Iniciar Sesion");
 
@@ -144,30 +140,13 @@ public class LoginGUI extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
    
     
-    class Fondo extends JPanel{
-        
-        private Image imagen;
-        
-        @Override
-        public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/imagenes/fondo_login.jpg")).getImage();
-            
-            g.drawImage(imagen,0,0,getWidth(),getHeight(),this);
-            setOpaque(false);
-            
-            super.paint(g);
-        }
-    }
-    
-    
-    
     class Logo extends JPanel{
         
         private Image imagen;
         
         @Override
         public void paint(Graphics g){
-            imagen = new ImageIcon(getClass().getResource("/imagenes/PARA CAMI.png")).getImage();
+            imagen = new ImageIcon(getClass().getResource("/imagenes/logo_NetU.png")).getImage();
             
             g.drawImage(imagen,0,0,getWidth(),getHeight(),this);
             setOpaque(false);
