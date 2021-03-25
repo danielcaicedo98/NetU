@@ -17,6 +17,13 @@ public class mainServer {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Servidor miServer = new Servidor();
+        miServer.setVisible(true);
+        miServer.setResizable(false);
+        miServer.setLocationRelativeTo(null);
+        LoginServidor miLogin = new LoginServidor();
+        miLogin.setVisible(true);
     }
     
 }
