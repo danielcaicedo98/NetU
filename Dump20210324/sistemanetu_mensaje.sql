@@ -30,7 +30,7 @@ CREATE TABLE `mensaje` (
   KEY `codigo_Empleado_2` (`codigo_Empleado_2`),
   CONSTRAINT `mensaje_ibfk_1` FOREIGN KEY (`codigo_Empleado_1`) REFERENCES `empleado` (`codigo_Empleado`),
   CONSTRAINT `mensaje_ibfk_2` FOREIGN KEY (`codigo_Empleado_2`) REFERENCES `empleado` (`codigo_Empleado`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

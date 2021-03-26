@@ -31,7 +31,7 @@ CREATE TABLE `publicacion` (
   PRIMARY KEY (`id_Publicacion`),
   KEY `codigo_Empleado` (`codigo_Empleado`),
   CONSTRAINT `publicacion_ibfk_1` FOREIGN KEY (`codigo_Empleado`) REFERENCES `empleado` (`codigo_Empleado`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

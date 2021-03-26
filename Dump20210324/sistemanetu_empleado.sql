@@ -35,7 +35,7 @@ CREATE TABLE `empleado` (
   KEY `subdependencia` (`subdependencia`),
   CONSTRAINT `empleado_ibfk_1` FOREIGN KEY (`dependencia`) REFERENCES `dependencia` (`id_Dependencia`),
   CONSTRAINT `empleado_ibfk_2` FOREIGN KEY (`subdependencia`) REFERENCES `subdependencia` (`id_Subdependencia`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
