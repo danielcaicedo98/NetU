@@ -7,7 +7,7 @@ package modelo;
 
 /**
  *
- * @author PuntoPC (Camila)
+ * @author Camila
  */
 
 public class Empleado {
