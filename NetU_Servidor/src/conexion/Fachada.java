@@ -17,19 +17,25 @@ public class Fachada {
     
     private static Connection con = null;
     
+    /*usr = root
+    pwd = 
+    driver = com.mysql.cj.jdbc.Driver
+    url = jdbc:mysql://localhost:3306/sistemanetu?characterEncoding=utf8
+    */
+    
     public static Connection getConnection(){
         try
         {
             if(con == null){
                 
                 Runtime.getRuntime().addShutdownHook(new MiShDwnHook());
-                ResourceBundle rb = ResourceBundle.getBundle("conexion.jdbc");
-                String driver = rb.getString("driver");
-                String url = rb.getString("url");
-                String pwd = rb.getString("pwd");
-                String usr = rb.getString("usr");
+                /*ResourceBundle rb = ResourceBundle.getBundle("src.conexion.jdbc");
+                String driver = rb.getString("driver");*/
+                String url = "jdbc:mysql://localhost:3306/sistemanetu?characterEncoding=utf8";
+                String pwd = "";
+                String usr = "root";
                 
-                Class.forName(driver);
+                Class.forName("com.mysql.cj.jdbc.Driver");
                 con = DriverManager.getConnection(url, usr, pwd);
             }
                          
