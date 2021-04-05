@@ -7,7 +7,7 @@ package vista;
 
 /**
  *
- * @author PuntoPC
+ * @author Camila
  */
 public class DescripcionGUI extends javax.swing.JFrame {
 

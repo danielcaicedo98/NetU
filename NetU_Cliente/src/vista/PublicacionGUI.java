@@ -7,7 +7,7 @@ package vista;
 
 /**
  *
- * @author PuntoPC
+ * @author Camila
  */
 public class PublicacionGUI extends javax.swing.JFrame {
 

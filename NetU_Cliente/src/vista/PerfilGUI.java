@@ -7,7 +7,7 @@ package vista;
 
 /**
  *
- * @author PuntoPC
+ * @author Camila
  */
 public class PerfilGUI extends javax.swing.JFrame {
 

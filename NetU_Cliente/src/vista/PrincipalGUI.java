@@ -7,7 +7,7 @@ package vista;
 
 /**
  *
- * @author PuntoPC
+ * @author Camila
  */
 public class PrincipalGUI extends javax.swing.JFrame {
 

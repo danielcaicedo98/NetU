@@ -7,7 +7,7 @@ package vista;
 
 /**
  *
- * @author PuntoPC
+ * @author Camila
  */
 public class ChatGUI extends javax.swing.JFrame {
 
