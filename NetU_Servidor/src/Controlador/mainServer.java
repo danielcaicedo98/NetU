@@ -1,4 +1,4 @@
-package main;
+package Controlador;
 
 import vista.LoginServidor;
 import vista.Servidor;
