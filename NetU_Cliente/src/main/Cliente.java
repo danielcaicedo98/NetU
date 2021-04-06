@@ -1,5 +1,8 @@
 package main;
 
+import java.awt.BorderLayout;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
 import modelo.*;
 
 import java.awt.event.ActionEvent;
@@ -36,7 +39,9 @@ class MarcoCliente extends JFrame{
 	
 	public MarcoCliente(){
 		
-		setBounds(600,300,280,350);
+		//setBounds(600,300,280,350);
+                
+                setSize(140, 200);
 				
 		LaminaMarcoCliente milamina=new LaminaMarcoCliente();
 		
@@ -52,8 +57,8 @@ class MarcoCliente extends JFrame{
 
 class LaminaMarcoCliente extends JPanel implements Runnable{
 	
-	public LaminaMarcoCliente(){                
-                             
+	public LaminaMarcoCliente(){     
+            
                 nickName = "Daniel";
             
                 nombreChat = new JLabel();
@@ -62,15 +67,23 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
                 
                 add(nombreChat);
             
-		JLabel texto=new JLabel("Online");		 
+		JLabel texto=new JLabel("    Online");		 
                                
                 add(texto);    
 	
-		campo1=new JTextField(20);
+		campo1=new JTextField(10);
                 
-                contrasenia = new JTextField(20);
+                contrasenia = new JTextField(10);
+                
+                JLabel codigo = new JLabel("Codigo: ");
+                
+                JLabel contrasena = new JLabel("Contraseña: ");
+                
+                add(codigo);
               	
 		add(campo1);	
+                
+                add(contrasena);
                 
                 add(contrasenia);
 	
